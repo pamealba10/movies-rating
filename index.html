@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas rating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pelicula-layout">
+        <!-- Navegación superior: inicio · extremos · otros -->
+        <nav class="nav-superior">
+            <span class="nav-item">INICIO</span>
+            <span class="nav-item">ESTRENOS</span>
+            <span class="nav-item">MÚSICA</span>
+        </nav>
+
+        <!-- Contenido principal: título de la película a la izquierda, caja de comentarios a la derecha -->
+        <div class="main-content">
+            <!-- Bloque izquierdo: Película + Imagen (título grande) -->
+            <section class="pelicula-titulo">
+                <h3 class="pelicula-imagen">Película</h3>
+                <img src="./img/evil.png" alt="Imagen de la película" class="pelicula-imagen">
+                <p class="subtitulo-peli">
+El mundo de la moda está gobernado por la déspota y sofisticada Miranda Priestley. Trabajar como su ayudante podría abrirle cualquier puerta a la inocente Andy Sachs, pero para ello tendrá que encajar entre las periodistas de la revista Runway.
+<br>Fecha de estreno: 22 de septiembre de 2006 (México)
+<br>Director: David Frankel
+<br>Historia de: Lauren Weisberger
+<br>Adaptaciones de: El diablo viste de Prada
+<br>Nominaciones: Premio Óscar a la Mejor Actriz Secundaria (Streep), Premio Óscar a la Mejor Dirección de Arte, Premio Óscar al Mejor Vestuario
+<br>
+Productor: Wendy Finerman
+</p>
+            </section>
+
+            <!-- Bloque derecho: Caja de Comentarios (con fecha y hora) -->
+            <aside class="caja-comentarios-wrapper">
+                <h2 class="caja-titulo">Caja de Comentarios</h2>
+                <div id="comentarios-app" class="comentarios-app">
+                    <!-- Los comentarios se inyectan aquí desde JavaScript -->
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="movies.js"></script>
+</body>
+</html>
